@@ -6,8 +6,8 @@
     }
 
     :root {
-        --black: #050505ff;
-        --black-2: #000000ff;
+        --black: rgb(0, 0, 0);
+        --black-2: rgb(0, 0, 0);
         --dim-gray: rgb(185, 144, 8);
         --platinum: rgb(255, 255, 255);
         --eerie-black: rgb(228, 228, 228);
@@ -17,11 +17,28 @@
     }
 
     body {
-        background: #474d52;
-        color: rgb(237, 224, 224);
+        background: #ffea00;
+        color: rgb(255, 247, 0);
         font-family: var(--texto-corpo);
     }
 
-    .titulo-principal{
-        font-family: var(--texto-titulo);
+    .cabecalho{
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: 12px;
+
+    }
+
+    .cabecalho-img{
+        width: 10%;
+        border-radius: 100%;
+    }
+
+    .cabecalho-nav__link{
+       text-decoration: none; 
+       font-family: var(--texto-titulo);
+       font-size: 24px;
+       color: var(--yellow);
+       margin-right: 24px;
     }
